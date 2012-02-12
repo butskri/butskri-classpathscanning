@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>be.butskri</groupId>
+  <artifactId>butskri-classpathscanning</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>butskri-classpathscanning</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.8.5</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-integration</artifactId>
+      <version>1.2.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.easytesting</groupId>
+    	<artifactId>fest-assert</artifactId>
+    	<version>1.4</version>
+    	<scope>test</scope>
+    </dependency>
+		<dependency>
+		  <groupId>org.clapper</groupId>
+		  <artifactId>javautil</artifactId>
+		  <version>3.0.1</version>
+		</dependency>
+		<dependency>
+		  <groupId>asm</groupId>
+		  <artifactId>asm-all</artifactId>
+		  <version>3.3</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.extcos</groupId>
+			<artifactId>extcos</artifactId>
+			<version>0.3b</version>
+		</dependency>
+  </dependencies>
+	<repositories>
+	  <repository>
+	    <releases>
+	      <enabled>true</enabled>
+	      <updatePolicy>always</updatePolicy>
+	      <checksumPolicy>warn</checksumPolicy>
+	    </releases>
+	    <id>clapper-org-maven-repo</id>
+	    <name>org.clapper Maven Repo</name>
+	    <url>http://maven.clapper.org/</url>
+	    <layout>default</layout>
+	  </repository>
+	  <repository>
+	    <releases>
+	      <enabled>true</enabled>
+	      <updatePolicy>always</updatePolicy>
+	      <checksumPolicy>warn</checksumPolicy>
+	    </releases>
+	    <id>ow2-maven-repo</id>
+	    <name>ow2 Maven Repo</name>
+	    <url>http://maven.ow2.org/maven2/</url>
+	    <layout>default</layout>
+	  </repository>
+	</repositories>
+</project>
