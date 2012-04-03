@@ -77,7 +77,8 @@ public class ScannedClassTest {
 	}
 
 	private void assertDependencies(Set<Dependency> dependencies, String... expectedDependencies) {
-		assertThat(toStringSet(dependencies)).containsOnly(expectedDependencies);
+		Object[] expectedValues = expectedDependencies;
+		assertThat(toStringSet(dependencies)).containsOnly(expectedValues);
 	}
 
 	private Set<String> toStringSet(Set<Dependency> dependencies) {

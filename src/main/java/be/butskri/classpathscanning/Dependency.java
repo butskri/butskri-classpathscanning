@@ -13,6 +13,7 @@ public class Dependency {
 		this.scannedClass = scannedClass;
 	}
 
+	@Override
 	public String toString() {
 		return path.toString().concat(": ").concat(getType().getName());
 	}
